@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "接口代理扩展",
+    "version": "1.0",
+    "description": "自定义请求接口和代理接口",
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "declarativeNetRequest",
+        "declarativeNetRequestFeedback",
+        "declarativeNetRequestWithHostAccess",
+        "storage"
+    ],
+    "host_permissions": [
+        "http://*/*",
+        "https://*/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "icons": {
+        "16": "proxy.png",
+        "32": "proxy.png",
+        "48": "proxy.png",
+        "128": "proxy.png"
+    }
+}
